@@ -91,7 +91,17 @@ export function Header() {
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
             transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed inset-0 bg-[var(--navy)] md:hidden flex flex-col z-50"
+            className="md:hidden flex flex-col z-50 overflow-y-auto"
+            style={{
+              position: 'fixed',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              width: '100vw',
+              height: '100vh',
+              backgroundColor: '#1A2B4A',
+            }}
           >
             <div className="flex items-center justify-between px-6 py-5 border-b border-white/10">
               <img
