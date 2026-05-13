@@ -1,26 +1,185 @@
 @import "tailwindcss";
 
+@theme {
+  /* Brand colors */
+  --color-navy: #1A2B4A;
+  --color-navy-light: #2D4A7A;
+  --color-gold: #C9A84C;
+  --color-gold-light: #F0DFA0;
+  --color-cream: #F8F6F1;
+  --color-ink: #1C1C1E;
+  --color-ink-muted: #4A4A52;
+  --color-border: #E2DDD4;
+
+  /* Fonts */
+  --font-cormorant: var(--font-cormorant);
+  --font-jost: var(--font-jost);
+
+  /* Type scale */
+  --text-xs: 12px;
+  --text-sm: 15px;
+  --text-md: 18px;
+  --text-lg: 21px;
+  --text-xl: 24px;
+  --text-2xl: 30px;
+  --text-3xl: 33px;
+  --text-4xl: 39px;
+  --text-5xl: 60px;
+  --text-hero: 69px;
+
+  /* Spacing */
+  --spacing-1: 6px;
+  --spacing-2: 9px;
+  --spacing-3: 12px;
+  --spacing-4: 21px;
+  --spacing-5: 27px;
+  --spacing-6: 36px;
+  --spacing-7: 54px;
+  --spacing-8: 72px;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --navy:       #1A2B4A;
+  --navy-light: #2D4A7A;
+  --gold:       #C9A84C;
+  --gold-light: #F0DFA0;
+  --cream:      #F8F6F1;
+  --ink:        #1C1C1E;
+  --ink-muted:  #4A4A52;
+  --border:     #E2DDD4;
+
+  --text-xs:   12px;
+  --text-sm:   15px;
+  --text-md:   18px;
+  --text-lg:   21px;
+  --text-xl:   24px;
+  --text-2xl:  30px;
+  --text-3xl:  33px;
+  --text-4xl:  39px;
+  --text-5xl:  60px;
+  --text-hero: 69px;
+
+  --space-1:  6px;
+  --space-2:  9px;
+  --space-3: 12px;
+  --space-4: 21px;
+  --space-5: 27px;
+  --space-6: 36px;
+  --space-7: 54px;
+  --space-8: 72px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-jost), system-ui, sans-serif;
+  font-size: var(--text-sm);
+  line-height: 2.1;
+}
+
+/* Typography utilities */
+.font-cormorant {
+  font-family: var(--font-cormorant), Georgia, serif;
+}
+
+.font-jost {
+  font-family: var(--font-jost), system-ui, sans-serif;
+}
+
+/* Eyebrow label style */
+.eyebrow {
+  font-family: var(--font-jost), system-ui, sans-serif;
+  font-size: var(--text-xs);
+  font-weight: 500;
+  letter-spacing: 0.39em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+/* Nav link style */
+.nav-link {
+  font-size: var(--text-xs);
+  font-weight: 500;
+  letter-spacing: 0.21em;
+  text-transform: uppercase;
+}
+
+/* Caption style */
+.caption {
+  font-size: var(--text-xs);
+  letter-spacing: 0.30em;
+}
+
+/* Section heading */
+.section-title {
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-size: var(--text-3xl);
+  font-weight: 300;
+  line-height: 1.2;
+  color: var(--navy);
+}
+
+/* Hero title */
+.hero-title {
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-size: var(--text-hero);
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+/* Gold italic accent */
+.gold-italic {
+  color: var(--gold);
+  font-style: italic;
+}
+
+/* Gold divider line */
+.gold-line {
+  width: 48px;
+  height: 1px;
+  background-color: var(--gold);
+}
+
+/* Geometric grid background */
+.geo-grid {
+  background-image:
+    linear-gradient(rgba(201, 168, 76, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201, 168, 76, 0.06) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* WhatsApp green */
+.wa-green {
+  background-color: #25D366;
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

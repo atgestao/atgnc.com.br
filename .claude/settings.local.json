@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(vercel whoami *)",
+      "Bash(gh api *)",
+      "Bash(vercel teams *)",
+      "Bash(vercel logout *)",
+      "Bash(vercel login *)",
+      "Bash(gh auth *)",
+      "Bash(git add *)",
+      "Bash(git commit -m 'feat: site institucional AT Gestão atgnc.com.br *)"
+    ]
+  }
+}
