@@ -17,15 +17,14 @@ const NAV = [
 
 const MENU_STYLE: React.CSSProperties = {
   position: 'fixed',
-  top: 0,
-  left: 0,
-  width: '100vw',
-  height: '100vh',
+  inset: 0,
+  background: '#1A2B4A',
   backgroundColor: '#1A2B4A',
   zIndex: 9999,
   display: 'flex',
   flexDirection: 'column',
   overflowY: 'auto',
+  minHeight: '-webkit-fill-available',
 };
 
 export function Header() {
@@ -107,10 +106,10 @@ export function Header() {
       <AnimatePresence>
         {open && (
           <motion.div
-            initial={{ x: '100%' }}
-            animate={{ x: 0 }}
-            exit={{ x: '100%' }}
-            transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
             style={MENU_STYLE}
           >
             {/* Top bar */}
