@@ -1,18 +1,17 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { MessageCircle } from 'lucide-react';
+import { MessageCircle, Instagram } from 'lucide-react';
 import { EQUIPE } from '@/lib/data/empresa';
 import { SectionHeader } from '@/components/ui/SectionHeader';
-import { Badge } from '@/components/ui/Badge';
 import { WA } from '@/lib/whatsapp';
 import { fadeInUp, stagger } from '@/lib/animations';
 
 export function TeamPreview() {
   return (
-    <section className="py-24 bg-[var(--navy)]">
+    <section className="py-28 bg-[var(--navy)]">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="mb-16">
+        <div className="mb-20">
           <SectionHeader
             eyebrow="Nossa Equipe"
             title="Contadores especializados"
@@ -33,10 +32,10 @@ export function TeamPreview() {
             <motion.div
               key={membro.nome}
               variants={fadeInUp}
-              className="bg-[var(--navy-light)] p-8 border border-white/10"
+              className="bg-white p-10"
             >
               {/* Photo */}
-              <div className="w-20 h-20 rounded-full border-2 border-[var(--gold)] overflow-hidden mb-6">
+              <div className="w-24 h-24 rounded-full border-2 border-[var(--gold)] overflow-hidden mb-6">
                 <img
                   src={`/images/${membro.iniciais === 'AG' ? 'andrea-goncalves' : 'tiago-cardoso'}.jpg`}
                   alt={membro.nome}
@@ -44,31 +43,45 @@ export function TeamPreview() {
                 />
               </div>
 
-              <h3 className="font-cormorant text-[var(--text-xl)] font-semibold text-white mb-1">
+              <h3
+                className="font-cormorant font-semibold text-[var(--navy)] mb-1 leading-tight"
+                style={{ fontSize: 'clamp(22px, 2vw, 28px)' }}
+              >
                 {membro.nome}
               </h3>
-              <p className="text-[var(--gold)] text-xs tracking-[0.21em] uppercase mb-6">
+              <p className="text-[var(--gold)] text-xs tracking-[0.2em] uppercase mb-5">
                 {membro.cargo}
               </p>
 
-              {/* Especialidades */}
-              <div className="flex flex-wrap gap-2 mb-8">
-                {membro.especialidades.map((esp) => (
-                  <Badge key={esp} variant="outline-gold" className="text-[10px]">
-                    {esp}
-                  </Badge>
-                ))}
+              {/* Especialidades sem quadrado */}
+              <div className="mb-8">
+                <div className="w-6 h-px bg-[var(--gold)] mb-4" />
+                <p className="text-[var(--ink-muted)] text-sm leading-loose">
+                  {membro.especialidades.join(' · ')}
+                </p>
               </div>
 
-              <a
-                href={WA[membro.iniciais === 'AG' ? 'andrea' : 'tiago']()}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#25D366] text-white text-xs font-medium tracking-[0.15em] uppercase hover:bg-[#128C7E] transition-colors duration-200"
-              >
-                <MessageCircle size={14} />
-                WhatsApp
-              </a>
+              {/* Social links */}
+              <div className="flex items-center gap-3">
+                <a
+                  href={WA[membro.iniciais === 'AG' ? 'andrea' : 'tiago']()}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#25D366] text-white text-xs font-medium tracking-[0.15em] uppercase hover:bg-[#128C7E] transition-colors duration-200"
+                >
+                  <MessageCircle size={13} />
+                  WhatsApp
+                </a>
+                <a
+                  href={membro.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 border border-[var(--border)] text-[var(--ink-muted)] text-xs font-medium tracking-[0.15em] uppercase hover:border-[var(--gold)] hover:text-[var(--gold)] transition-all duration-200"
+                >
+                  <Instagram size={13} />
+                  Instagram
+                </a>
+              </div>
             </motion.div>
           ))}
         </motion.div>

@@ -38,6 +38,7 @@ export const EQUIPE = [
     ],
     whatsapp: '5527993169155',
     telefone: '(27) 99316-9155',
+    instagram: 'https://www.instagram.com/andreacontabil.es/',
   },
   {
     nome: 'Tiago Cardoso',
@@ -53,6 +54,7 @@ export const EQUIPE = [
     ],
     whatsapp: '5527997378431',
     telefone: '(27) 99737-8431',
+    instagram: 'https://www.instagram.com/tgcard/',
   },
 ] as const;
 
