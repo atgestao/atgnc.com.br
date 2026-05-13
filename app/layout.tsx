@@ -4,7 +4,6 @@ import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
-import { WhatsAppButton } from '@/components/ui/WhatsAppButton';
 import './globals.css';
 
 const cormorant = Cormorant_Garamond({
@@ -90,7 +89,6 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
-        <WhatsAppButton />
         <Analytics />
         <SpeedInsights />
       </body>
