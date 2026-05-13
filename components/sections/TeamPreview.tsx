@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { MessageCircle, Instagram } from 'lucide-react';
+import { MessageCircle } from 'lucide-react';
 import { EQUIPE } from '@/lib/data/empresa';
 import { SectionHeader } from '@/components/ui/SectionHeader';
 import { WA } from '@/lib/whatsapp';
@@ -78,7 +78,7 @@ export function TeamPreview() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-5 py-2.5 border border-[var(--border)] text-[var(--ink-muted)] text-xs font-medium tracking-[0.15em] uppercase hover:border-[var(--gold)] hover:text-[var(--gold)] transition-all duration-200"
                 >
-                  <Instagram size={13} />
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
                   Instagram
                 </a>
               </div>

@@ -24,7 +24,8 @@
       "Bash(vercel --prod --yes)",
       "Bash(vercel alias *)",
       "Bash(Copy-Item \"C:\\\\Users\\\\Ana Paula\\\\anawebdesing.com.br\\\\public\\\\logo-awd-white.svg\" \"C:\\\\Users\\\\Ana Paula\\\\atgnc.com.br\\\\.claude\\\\worktrees\\\\awesome-brattain-6a4e01\\\\public\\\\images\\\\logo-awd-white.svg\")",
-      "Bash(Write-Host \"Copied\")"
+      "Bash(Write-Host \"Copied\")",
+      "Bash(node -e \"const lr = require\\('lucide-react'\\); console.log\\(typeof lr.Instagram, typeof lr.InstagramIcon\\)\")"
     ]
   }
 }
