@@ -9,13 +9,25 @@ import { EMPRESA } from '@/lib/data/empresa';
 export function CTABanner() {
   return (
     <section
-      className="py-24 relative overflow-hidden"
+      className="py-32 relative overflow-hidden"
       style={{
         background: 'linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%)',
       }}
     >
-      {/* Geo grid */}
-      <div className="absolute inset-0 geo-grid opacity-30" aria-hidden="true" />
+      <div className="absolute inset-0 geo-grid opacity-20" aria-hidden="true" />
+
+      {/* Decorative monogram */}
+      <div
+        className="absolute right-[-5%] bottom-[-10%] font-cormorant font-light leading-none select-none pointer-events-none"
+        style={{
+          fontSize: 'clamp(200px, 30vw, 500px)',
+          color: 'rgba(201,168,76,0.04)',
+          letterSpacing: '-0.05em',
+        }}
+        aria-hidden="true"
+      >
+        AT
+      </div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-8 text-center">
         <motion.div
@@ -24,18 +36,18 @@ export function CTABanner() {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <motion.p variants={fadeInUp} className="eyebrow mb-6">
+          <motion.p variants={fadeInUp} className="eyebrow mb-8">
             Pronto para começar?
           </motion.p>
 
-          <motion.div variants={fadeInUp} className="flex justify-center mb-6">
+          <motion.div variants={fadeInUp} className="flex justify-center mb-8">
             <div className="gold-line" />
           </motion.div>
 
           <motion.h2
             variants={fadeInUp}
-            className="font-cormorant font-light text-white leading-tight mb-6"
-            style={{ fontSize: 'clamp(32px, 5vw, 48px)' }}
+            className="font-cormorant font-light text-white mb-8"
+            style={{ fontSize: 'clamp(40px, 6vw, 64px)', lineHeight: 1.1 }}
           >
             Sua empresa merece um parceiro{' '}
             <em className="text-[var(--gold)] not-italic whitespace-nowrap">de confiança.</em>
@@ -43,7 +55,8 @@ export function CTABanner() {
 
           <motion.p
             variants={fadeInUp}
-            className="text-white/70 text-sm leading-relaxed mb-10 max-w-xl mx-auto"
+            className="text-white/60 leading-relaxed mb-12 max-w-xl mx-auto"
+            style={{ fontSize: 'clamp(15px, 1.3vw, 17px)' }}
           >
             Entre em contato agora e descubra como a AT Gestão pode transformar
             a saúde financeira do seu negócio.
@@ -54,20 +67,20 @@ export function CTABanner() {
               href={WA.andrea(MSG.geral)}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-10 py-4 bg-[var(--gold)] text-[var(--navy)] text-xs font-medium tracking-[0.21em] uppercase hover:bg-[var(--gold-light)] transition-colors duration-200"
+              className="inline-flex items-center gap-3 px-10 py-4 bg-[var(--gold)] text-[var(--navy)] text-xs font-semibold tracking-[0.25em] uppercase hover:bg-[var(--gold-light)] transition-colors duration-200"
             >
               Falar pelo WhatsApp
-              <ArrowRight size={16} />
+              <ArrowRight size={14} />
             </a>
             <a
               href="/contato"
-              className="inline-flex items-center gap-2 px-10 py-4 border border-white/30 text-white text-xs font-medium tracking-[0.21em] uppercase hover:border-[var(--gold)] hover:text-[var(--gold)] transition-all duration-200"
+              className="inline-flex items-center gap-3 px-10 py-4 border border-white/25 text-white text-xs font-medium tracking-[0.25em] uppercase hover:border-[var(--gold)] hover:text-[var(--gold)] transition-all duration-200"
             >
               Enviar Mensagem
             </a>
           </motion.div>
 
-          <motion.p variants={fadeInUp} className="text-white/40 text-xs mt-8 tracking-wide">
+          <motion.p variants={fadeInUp} className="text-white/30 text-xs mt-10 tracking-widest uppercase">
             Atendimento: {EMPRESA.horario} · {EMPRESA.endereco.cidade}, {EMPRESA.endereco.estado}
           </motion.p>
         </motion.div>

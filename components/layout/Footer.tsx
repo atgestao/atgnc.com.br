@@ -75,9 +75,22 @@ export function Footer() {
           <p className="text-white/40 text-xs tracking-wide">
             © {year} AT Gestão de Negócios e Contabilidade. Todos os direitos reservados.
           </p>
-          <p className="text-white/30 text-xs">
-            <a href="https://atgnc.com.br" className="hover:text-[var(--gold)] transition-colors">atgnc.com.br</a>
-          </p>
+          <a
+            href="https://www.anawebdesign.com.br"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-white/25 hover:text-white/50 transition-colors duration-200"
+            aria-label="Design by Ana Web Design"
+          >
+            <span className="text-[10px] tracking-[0.2em] uppercase">Design</span>
+            <img
+              src="/images/logo-awd-white.svg"
+              alt="Ana Web Design"
+              width="52"
+              height="17"
+              style={{ maxWidth: 'none', opacity: 0.6 }}
+            />
+          </a>
         </div>
       </div>
     </footer>

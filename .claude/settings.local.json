@@ -8,7 +8,23 @@
       "Bash(vercel login *)",
       "Bash(gh auth *)",
       "Bash(git add *)",
-      "Bash(git commit -m 'feat: site institucional AT Gestão atgnc.com.br *)"
+      "Bash(git commit -m 'feat: site institucional AT Gestão atgnc.com.br *)",
+      "Bash(git remote *)",
+      "Bash(git push *)",
+      "Bash(VERCEL_TOKEN=vcp_4Km4w8peE4LJFucjV42afW6dRTJlrWfcV0lBvrnqVZdTDVR9RR4ZiwzM vercel deploy --prod --token vcp_4Km4w8peE4LJFucjV42afW6dRTJlrWfcV0lBvrnqVZdTDVR9RR4ZiwzM --scope atgestao-7063 --yes)",
+      "Bash(vercel deploy *)",
+      "Bash(git commit *)",
+      "Bash(vercel domains *)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(ls \"C:\\\\Users\\\\Ana Paula\\\\Documents\\\\Clientes\\\\AT GESTÃO\\\\\")",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\Ana Paula\\\\Documents\\\\Clientes\\\\AT GESTÃO\\\\\" -File | ForEach-Object { \"$\\($_.Name\\) - $\\($_.Length\\) bytes\" })",
+      "PowerShell(\\(Get-Content \"C:\\\\Users\\\\Ana Paula\\\\atgnc.com.br\\\\.claude\\\\worktrees\\\\awesome-brattain-6a4e01\\\\public\\\\images\\\\at-gestao-white.svg\" -Raw\\).Substring\\(0, 200\\))",
+      "Bash(npx vercel *)",
+      "Bash(gh run *)",
+      "Bash(vercel --prod --yes)",
+      "Bash(vercel alias *)",
+      "Bash(Copy-Item \"C:\\\\Users\\\\Ana Paula\\\\anawebdesing.com.br\\\\public\\\\logo-awd-white.svg\" \"C:\\\\Users\\\\Ana Paula\\\\atgnc.com.br\\\\.claude\\\\worktrees\\\\awesome-brattain-6a4e01\\\\public\\\\images\\\\logo-awd-white.svg\")",
+      "Bash(Write-Host \"Copied\")"
     ]
   }
 }

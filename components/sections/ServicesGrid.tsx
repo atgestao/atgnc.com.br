@@ -26,9 +26,9 @@ const ICONS: Record<string, React.ComponentType<{ size?: number; className?: str
 
 export function ServicesGrid() {
   return (
-    <section className="py-24 bg-[var(--cream)]">
+    <section className="py-28 bg-[var(--cream)]">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="mb-16">
+        <div className="mb-20">
           <SectionHeader
             eyebrow="O que fazemos"
             title="Soluções completas para"
@@ -42,7 +42,7 @@ export function ServicesGrid() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-[var(--border)]"
         >
           {SERVICOS.map((servico) => {
             const Icon = ICONS[servico.icone] ?? BookOpen;
@@ -50,34 +50,41 @@ export function ServicesGrid() {
               <motion.div
                 key={servico.slug}
                 variants={fadeInUp}
-                className="group bg-white p-8 border border-[var(--border)] hover:-translate-y-1 hover:shadow-xl transition-all duration-300 cursor-default"
-                style={{ borderTop: '3px solid var(--gold)' }}
+                className="group bg-[var(--cream)] p-10 hover:bg-white transition-colors duration-300 relative overflow-hidden"
               >
                 {/* Decorative number */}
                 <span
-                  className="font-cormorant font-light text-[var(--gold)]/20 leading-none mb-4 block"
-                  style={{ fontSize: '60px' }}
+                  className="absolute top-6 right-8 font-cormorant font-light text-[var(--gold)]/10 leading-none select-none"
+                  style={{ fontSize: '80px' }}
+                  aria-hidden="true"
                 >
                   {servico.numero}
                 </span>
 
-                <Icon size={28} className="text-[var(--navy)] mb-4" />
+                <div className="relative">
+                  <div className="w-10 h-px bg-[var(--gold)] mb-8" />
 
-                <h3 className="font-cormorant text-[var(--text-xl)] font-semibold text-[var(--navy)] mb-3 leading-tight">
-                  {servico.titulo}
-                </h3>
+                  <Icon size={26} className="text-[var(--navy)] mb-6" />
 
-                <p className="text-[var(--ink-muted)] text-sm leading-relaxed mb-6">
-                  {servico.descricao}
-                </p>
+                  <h3
+                    className="font-cormorant font-semibold text-[var(--navy)] mb-4 leading-tight"
+                    style={{ fontSize: 'clamp(22px, 2vw, 26px)' }}
+                  >
+                    {servico.titulo}
+                  </h3>
 
-                <Link
-                  href={`/servicos/${servico.slug}`}
-                  className="inline-flex items-center gap-2 text-[var(--gold)] text-xs font-medium tracking-[0.15em] uppercase group-hover:gap-3 transition-all duration-200"
-                >
-                  Saiba mais
-                  <ArrowRight size={14} />
-                </Link>
+                  <p className="text-[var(--ink-muted)] text-sm leading-relaxed mb-8">
+                    {servico.descricao}
+                  </p>
+
+                  <Link
+                    href={`/servicos/${servico.slug}`}
+                    className="inline-flex items-center gap-2 text-[var(--gold)] text-xs font-medium tracking-[0.18em] uppercase group-hover:gap-3 transition-all duration-200"
+                  >
+                    Saiba mais
+                    <ArrowRight size={13} />
+                  </Link>
+                </div>
               </motion.div>
             );
           })}

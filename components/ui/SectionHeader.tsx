@@ -43,22 +43,24 @@ export function SectionHeader({
 
       <motion.h2
         variants={fadeInUp}
-        className={`font-cormorant text-[var(--text-3xl)] font-light leading-tight mb-4 ${
+        className={`font-cormorant font-light leading-tight mb-5 ${
           light ? 'text-white' : 'text-[var(--navy)]'
         }`}
+        style={{ fontSize: 'clamp(36px, 4vw, 52px)' }}
       >
         {title}
         {titleAccent && (
-          <> <em className="text-[var(--gold)] not-italic font-light">{titleAccent}</em></>
+          <> <em className="text-[var(--gold)] not-italic">{titleAccent}</em></>
         )}
       </motion.h2>
 
       {description && (
         <motion.p
           variants={fadeInUp}
-          className={`text-[var(--text-sm)] leading-relaxed ${
-            light ? 'text-white/75' : 'text-[var(--ink-muted)]'
+          className={`leading-relaxed ${
+            light ? 'text-white/70' : 'text-[var(--ink-muted)]'
           }`}
+          style={{ fontSize: 'clamp(15px, 1.3vw, 17px)' }}
         >
           {description}
         </motion.p>
