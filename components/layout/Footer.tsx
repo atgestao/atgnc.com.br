@@ -12,9 +12,14 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <div className="mb-4">
-              <span className="font-cormorant text-3xl font-semibold text-[var(--gold)]">AT</span>
-              <span className="font-cormorant text-3xl font-light text-white"> Gestão</span>
+            <div className="mb-5">
+              <img
+                src="/images/at-gestao-white.svg"
+                alt="AT Gestão de Negócios e Contabilidade"
+                width="178"
+                height="52"
+                style={{ maxWidth: 'none' }}
+              />
             </div>
             <div className="gold-line mb-5" />
             <p className="text-white/65 text-sm leading-relaxed max-w-xs">

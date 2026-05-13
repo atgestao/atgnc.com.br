@@ -27,7 +27,7 @@ export function TeamPreview() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid md:grid-cols-2 gap-8 max-w-3xl"
+          className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto"
         >
           {EQUIPE.map((membro) => (
             <motion.div
@@ -35,11 +35,13 @@ export function TeamPreview() {
               variants={fadeInUp}
               className="bg-[var(--navy-light)] p-8 border border-white/10"
             >
-              {/* Monogram */}
-              <div className="w-16 h-16 rounded-full border-2 border-[var(--gold)] flex items-center justify-center mb-6">
-                <span className="font-cormorant text-xl font-semibold text-[var(--gold)]">
-                  {membro.iniciais}
-                </span>
+              {/* Photo */}
+              <div className="w-20 h-20 rounded-full border-2 border-[var(--gold)] overflow-hidden mb-6">
+                <img
+                  src={`/images/${membro.iniciais === 'AG' ? 'andrea-goncalves' : 'tiago-cardoso'}.jpg`}
+                  alt={membro.nome}
+                  className="w-full h-full object-cover object-top"
+                />
               </div>
 
               <h3 className="font-cormorant text-[var(--text-xl)] font-semibold text-white mb-1">

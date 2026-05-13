@@ -38,7 +38,7 @@ export function CTABanner() {
             style={{ fontSize: 'clamp(32px, 5vw, 48px)' }}
           >
             Sua empresa merece um parceiro{' '}
-            <em className="text-[var(--gold)] not-italic">de confiança.</em>
+            <em className="text-[var(--gold)] not-italic whitespace-nowrap">de confiança.</em>
           </motion.h2>
 
           <motion.p

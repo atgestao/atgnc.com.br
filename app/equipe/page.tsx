@@ -31,8 +31,12 @@ export default function EquipePage() {
           <div className="grid md:grid-cols-2 gap-10">
             {EQUIPE.map((membro) => (
               <div key={membro.nome} className="bg-white p-10 border border-[var(--border)]" style={{ borderTop: '3px solid var(--gold)' }}>
-                <div className="w-20 h-20 rounded-full border-2 border-[var(--gold)] flex items-center justify-center mb-6">
-                  <span className="font-cormorant text-2xl font-semibold text-[var(--gold)]">{membro.iniciais}</span>
+                <div className="w-24 h-24 rounded-full border-2 border-[var(--gold)] overflow-hidden mb-6">
+                  <img
+                    src={`/images/${membro.iniciais === 'AG' ? 'andrea-goncalves' : 'tiago-cardoso'}.jpg`}
+                    alt={membro.nome}
+                    className="w-full h-full object-cover object-top"
+                  />
                 </div>
                 <h2 className="font-cormorant text-[var(--text-2xl)] font-semibold text-[var(--navy)] mb-1">{membro.nome}</h2>
                 <p className="text-[var(--gold)] text-xs tracking-[0.21em] uppercase mb-6">{membro.cargo}</p>

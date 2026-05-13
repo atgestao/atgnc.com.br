@@ -45,7 +45,7 @@ export function Hero() {
             style={{ fontSize: 'clamp(42px, 7vw, 69px)' }}
           >
             Sua empresa com as contas{' '}
-            <em className="text-[var(--gold)] not-italic">em dia.</em>
+            <em className="text-[var(--gold)] not-italic whitespace-nowrap">em dia.</em>
           </motion.h1>
 
           {/* Subtitle */}

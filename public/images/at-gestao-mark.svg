@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 779.06 779.06">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Nova_amostra_de_gradiente_2);
+      }
+
+      .cls-2 {
+        fill: url(#Gradiente_sem_nome_68);
+      }
+    </style>
+    <linearGradient id="Gradiente_sem_nome_68" data-name="Gradiente sem nome 68" x1="630.17" y1="77.59" x2="105.94" y2="757.14" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c8c7c7"/>
+      <stop offset=".41" stop-color="#fff"/>
+      <stop offset="1" stop-color="#d6d7d7"/>
+    </linearGradient>
+    <linearGradient id="Nova_amostra_de_gradiente_2" data-name="Nova amostra de gradiente 2" x1="0" y1="389.53" x2="779.06" y2="389.53" gradientUnits="userSpaceOnUse">
+      <stop offset=".08" stop-color="#b57422"/>
+      <stop offset=".19" stop-color="#fcd578"/>
+      <stop offset=".3" stop-color="#fff0b7"/>
+      <stop offset=".46" stop-color="#f8bc5c"/>
+      <stop offset=".6" stop-color="#b57422"/>
+      <stop offset=".64" stop-color="#b87825"/>
+      <stop offset=".68" stop-color="#c18531"/>
+      <stop offset=".71" stop-color="#d19a44"/>
+      <stop offset=".75" stop-color="#e6b75e"/>
+      <stop offset=".78" stop-color="#fcd578"/>
+      <stop offset=".94" stop-color="#fff0b7"/>
+    </linearGradient>
+  </defs>
+  <g id="Camada_1-2" data-name="Camada 1">
+    <g>
+      <circle class="cls-2" cx="389.53" cy="389.53" r="389.53"/>
+      <path class="cls-1" d="M389.53,2c52.32,0,103.07,10.25,150.84,30.45,46.15,19.52,87.59,47.46,123.18,83.05,35.59,35.59,63.53,77.03,83.05,123.18,20.21,47.78,30.45,98.53,30.45,150.84s-10.25,103.07-30.45,150.84c-19.52,46.15-47.46,87.59-83.05,123.18-35.59,35.59-77.03,63.53-123.18,83.05-47.78,20.21-98.53,30.45-150.84,30.45s-103.07-10.25-150.84-30.45c-46.15-19.52-87.59-47.46-123.18-83.05-35.59-35.59-63.53-77.03-83.05-123.18C12.25,492.6,2,441.84,2,389.53s10.25-103.07,30.45-150.84c19.52-46.15,47.46-87.59,83.05-123.18,35.59-35.59,77.03-63.53,123.18-83.05C286.46,12.25,337.21,2,389.53,2M389.53,0C174.4,0,0,174.4,0,389.53s174.4,389.53,389.53,389.53,389.53-174.4,389.53-389.53S604.66,0,389.53,0h0Z"/>
+    </g>
+  </g>
+</svg>

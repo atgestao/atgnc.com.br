@@ -57,7 +57,11 @@ export function Stats() {
               key={stat.label}
               variants={fadeInUp}
               className={`py-10 px-6 text-center ${
-                i < STATS.length - 1 ? 'border-r border-[var(--gold)]/20' : ''
+                i === STATS.length - 1
+                  ? ''
+                  : i % 2 === 1
+                    ? 'lg:border-r lg:border-[var(--gold)]/20'
+                    : 'border-r border-[var(--gold)]/20'
               }`}
             >
               <div

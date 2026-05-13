@@ -36,18 +36,14 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3" aria-label="AT Gestão - Página inicial">
-            <div>
-              <div className="flex items-baseline gap-1">
-                <span className="font-cormorant text-2xl font-semibold text-[var(--gold)] tracking-wide">
-                  AT
-                </span>
-                <span className="font-cormorant text-2xl font-light text-white tracking-wide">
-                  Gestão
-                </span>
-              </div>
-              <div className="gold-line mt-1" />
-            </div>
+          <Link href="/" aria-label="AT Gestão - Página inicial">
+            <img
+              src="/images/at-gestao-white.svg"
+              alt="AT Gestão de Negócios e Contabilidade"
+              width="138"
+              height="40"
+              style={{ maxWidth: 'none' }}
+            />
           </Link>
 
           {/* Desktop Nav */}
