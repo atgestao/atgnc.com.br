@@ -62,7 +62,7 @@ export function TeamPreview() {
               </div>
 
               {/* Social links */}
-              <div className="flex items-center gap-3">
+              <div className="flex flex-wrap items-center gap-3">
                 <a
                   href={WA[membro.iniciais === 'AG' ? 'andrea' : 'tiago']()}
                   target="_blank"
