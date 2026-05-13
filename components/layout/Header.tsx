@@ -91,52 +91,46 @@ export function Header() {
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
             transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed inset-y-0 right-0 w-80 bg-[var(--navy)] shadow-2xl md:hidden flex flex-col z-50"
+            className="fixed inset-0 bg-[var(--navy)] md:hidden flex flex-col z-50"
           >
-            <div className="flex items-center justify-between p-6 border-b border-white/10">
-              <span className="font-cormorant text-xl text-white font-light">Menu</span>
-              <button onClick={() => setOpen(false)} className="text-white/70 hover:text-white" aria-label="Fechar menu">
-                <X size={22} />
+            <div className="flex items-center justify-between px-6 py-5 border-b border-white/10">
+              <img
+                src="/images/at-gestao-white.svg"
+                alt="AT Gestão"
+                width="110"
+                height="32"
+                style={{ maxWidth: 'none' }}
+              />
+              <button onClick={() => setOpen(false)} className="text-white/70 hover:text-white p-2" aria-label="Fechar menu">
+                <X size={24} />
               </button>
             </div>
 
-            <nav className="flex flex-col p-6 gap-6 flex-1" aria-label="Menu mobile">
+            <nav className="flex flex-col items-center justify-center gap-8 flex-1" aria-label="Menu mobile">
               {NAV.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
                   onClick={() => setOpen(false)}
-                  className="nav-link text-white/80 hover:text-[var(--gold)] transition-colors"
+                  className="font-cormorant text-white/90 hover:text-[var(--gold)] transition-colors duration-200"
+                  style={{ fontSize: 'clamp(26px, 6vw, 36px)', fontWeight: 300 }}
                 >
                   {item.label}
                 </Link>
               ))}
             </nav>
 
-            <div className="p-6 border-t border-white/10">
+            <div className="px-8 pb-10 border-t border-white/10 pt-6">
               <a
                 href={WA.andrea(MSG.geral)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full text-center nav-link py-3 border border-[var(--gold)] text-[var(--gold)] hover:bg-[var(--gold)] hover:text-[var(--navy)] transition-all duration-200"
+                className="block w-full text-center nav-link py-4 bg-[var(--gold)] text-[var(--navy)] font-semibold hover:bg-[var(--gold-light)] transition-all duration-200"
               >
                 Fale Conosco
               </a>
             </div>
           </motion.div>
-        )}
-      </AnimatePresence>
-
-      {/* Mobile overlay */}
-      <AnimatePresence>
-        {open && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/60 md:hidden z-40"
-            onClick={() => setOpen(false)}
-          />
         )}
       </AnimatePresence>
     </header>
