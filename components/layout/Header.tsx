@@ -157,8 +157,8 @@ export function Header() {
                   onClick={() => setOpen(false)}
                   style={{
                     fontFamily: 'Georgia, serif',
-                    fontSize: 'clamp(28px, 8vw, 40px)',
-                    fontWeight: 300,
+                    fontSize: 'clamp(20px, 5vw, 28px)',
+                    fontWeight: 200,
                     color: 'rgba(255,255,255,0.92)',
                     textDecoration: 'none',
                     letterSpacing: '0.02em',
