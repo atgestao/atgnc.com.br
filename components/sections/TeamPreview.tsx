@@ -24,10 +24,6 @@ const CARD_BASE: React.CSSProperties = {
   transition: 'border-color 0.3s, box-shadow 0.3s',
 };
 
-const CARD_HOVER: React.CSSProperties = {
-  borderColor: 'rgba(201,168,76,0.5)',
-  boxShadow: '0 24px 48px rgba(0,0,0,0.35)',
-};
 
 export function TeamPreview() {
   return (
@@ -54,7 +50,7 @@ export function TeamPreview() {
             <motion.div
               key={membro.nome}
               variants={fadeInUp}
-              whileHover={{ y: -6, ...CARD_HOVER }}
+              whileHover={{ y: -6, boxShadow: '0 24px 48px rgba(0,0,0,0.35)' }}
               transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
               style={CARD_BASE}
               className="flex flex-col items-center text-center p-10 cursor-default"
