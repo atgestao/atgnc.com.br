@@ -36,6 +36,7 @@ export function TeamPreview() {
             titleAccent="para o seu negócio"
             description="Dois profissionais dedicados, prontos para oferecer o suporte que sua empresa precisa."
             light
+            centered
           />
         </div>
 
@@ -44,7 +45,7 @@ export function TeamPreview() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto"
+          className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto"
         >
           {EQUIPE.map((membro) => (
             <motion.div
