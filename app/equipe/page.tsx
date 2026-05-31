@@ -47,7 +47,7 @@ export default function EquipePage() {
       {/* Team cards */}
       <section className="py-24 bg-[var(--navy)]" style={GRID_BG}>
         <div className="max-w-3xl mx-auto px-6 lg:px-8">
-          <div className="flex flex-col gap-6">
+          <div className="grid md:grid-cols-2 gap-6">
             {EQUIPE.map((membro) => (
               <div
                 key={membro.nome}

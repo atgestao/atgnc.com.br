@@ -48,7 +48,7 @@ export function TeamPreview() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="flex flex-col gap-6 max-w-2xl mx-auto"
+          className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto"
         >
           {EQUIPE.map((membro) => (
             <motion.div
