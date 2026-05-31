@@ -10,9 +10,26 @@ export const metadata: Metadata = {
     'Conheça Andréa Gonçalves e Tiago Cardoso, os contadores especializados por trás da AT Gestão de Negócios e Contabilidade.',
 };
 
+const GRID_BG: React.CSSProperties = {
+  backgroundImage: `
+    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px)
+  `,
+  backgroundSize: '48px 48px',
+};
+
+const CARD_STYLE: React.CSSProperties = {
+  background: 'rgba(255,255,255,0.06)',
+  backdropFilter: 'blur(12px)',
+  WebkitBackdropFilter: 'blur(12px)',
+  border: '1px solid rgba(255,255,255,0.1)',
+  borderTop: '2px solid rgba(201,168,76,0.6)',
+};
+
 export default function EquipePage() {
   return (
     <>
+      {/* Hero */}
       <section className="pt-40 pb-24 bg-[var(--navy)]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <p className="eyebrow mb-4">Nossa Equipe</p>
@@ -27,58 +44,67 @@ export default function EquipePage() {
         </div>
       </section>
 
-      <section className="py-24 bg-[var(--cream)]">
-        <div className="max-w-5xl mx-auto px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-10">
+      {/* Team cards */}
+      <section className="py-24 bg-[var(--navy)]" style={GRID_BG}>
+        <div className="max-w-3xl mx-auto px-6 lg:px-8">
+          <div className="flex flex-col gap-6">
             {EQUIPE.map((membro) => (
-              <div key={membro.nome} className="bg-white p-10">
+              <div
+                key={membro.nome}
+                style={CARD_STYLE}
+                className="flex flex-col sm:flex-row gap-8 p-8 sm:p-10"
+              >
                 {/* Photo */}
-                <div className="w-28 h-28 rounded-full border-2 border-[var(--gold)] overflow-hidden mb-8">
-                  <img
-                    src={`/images/${membro.iniciais === 'AG' ? 'andrea-goncalves' : 'tiago-cardoso'}.jpg`}
-                    alt={membro.nome}
-                    className="w-full h-full object-cover object-top"
-                  />
+                <div className="shrink-0">
+                  <div className="w-28 h-28 rounded-full border-2 border-[var(--gold)] overflow-hidden">
+                    <img
+                      src={`/images/${membro.iniciais === 'AG' ? 'andrea-goncalves' : 'tiago-cardoso'}.jpg`}
+                      alt={membro.nome}
+                      className="w-full h-full object-cover object-top"
+                    />
+                  </div>
                 </div>
 
-                <h2
-                  className="font-cormorant font-semibold text-[var(--navy)] mb-1 leading-tight"
-                  style={{ fontSize: 'clamp(26px, 2.5vw, 32px)' }}
-                >
-                  {membro.nome}
-                </h2>
-                <p className="text-[var(--gold)] text-xs tracking-[0.2em] uppercase mb-7">
-                  {membro.cargo}
-                </p>
-
-                {/* Especialidades sem badges */}
-                <div className="mb-10">
-                  <div className="w-6 h-px bg-[var(--gold)] mb-5" />
-                  <p className="text-[var(--ink-muted)] text-sm leading-loose">
-                    {membro.especialidades.join(' · ')}
+                {/* Content */}
+                <div className="flex-1 min-w-0">
+                  <h2
+                    className="font-cormorant font-semibold text-white mb-1 leading-tight"
+                    style={{ fontSize: 'clamp(26px, 2.5vw, 32px)' }}
+                  >
+                    {membro.nome}
+                  </h2>
+                  <p className="text-[var(--gold)] text-xs tracking-[0.2em] uppercase mb-5">
+                    {membro.cargo}
                   </p>
-                </div>
 
-                {/* Social links */}
-                <div className="flex flex-wrap items-center gap-3">
-                  <a
-                    href={WA[membro.iniciais === 'AG' ? 'andrea' : 'tiago']()}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#25D366] text-white text-xs font-medium tracking-[0.15em] uppercase hover:bg-[#128C7E] transition-colors duration-200"
-                  >
-                    <MessageCircle size={13} />
-                    WhatsApp
-                  </a>
-                  <a
-                    href={membro.instagram}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-5 py-2.5 border border-[var(--border)] text-[var(--ink-muted)] text-xs font-medium tracking-[0.15em] uppercase hover:border-[var(--gold)] hover:text-[var(--gold)] transition-all duration-200"
-                  >
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-                    Instagram
-                  </a>
+                  <div className="mb-8">
+                    <div className="w-6 h-px bg-[var(--gold)] mb-4" />
+                    <p className="text-white/50 text-sm leading-loose">
+                      {membro.especialidades.join(' · ')}
+                    </p>
+                  </div>
+
+                  {/* Social links */}
+                  <div className="flex flex-wrap items-center gap-3">
+                    <a
+                      href={WA[membro.iniciais === 'AG' ? 'andrea' : 'tiago']()}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#25D366] text-white text-xs font-medium tracking-[0.15em] uppercase hover:bg-[#128C7E] transition-colors duration-200"
+                    >
+                      <MessageCircle size={13} />
+                      WhatsApp
+                    </a>
+                    <a
+                      href={membro.instagram}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-5 py-2.5 border border-white/20 text-white/50 text-xs font-medium tracking-[0.15em] uppercase hover:border-[var(--gold)] hover:text-[var(--gold)] transition-all duration-200"
+                    >
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                      Instagram
+                    </a>
+                  </div>
                 </div>
               </div>
             ))}
