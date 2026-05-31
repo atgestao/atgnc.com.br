@@ -64,18 +64,18 @@ export default function EquipePage() {
                 </div>
 
                 <h2
-                  className="font-cormorant font-semibold text-white mb-1 leading-tight"
+                  className="font-cormorant font-semibold text-white mb-1 leading-tight text-center"
                   style={{ fontSize: 'clamp(26px, 2.5vw, 32px)' }}
                 >
                   {membro.nome}
                 </h2>
-                <p className="text-[var(--gold)] text-xs tracking-[0.2em] uppercase mb-5">
+                <p className="text-[var(--gold)] text-xs tracking-[0.2em] uppercase mb-5 text-center">
                   {membro.cargo}
                 </p>
 
-                <div className="mb-8 flex flex-col items-center">
+                <div className="mb-8 flex flex-col items-center w-full">
                   <div className="w-6 h-px bg-[var(--gold)] mb-4" />
-                  <p className="text-white/50 text-sm leading-loose">
+                  <p className="text-white/50 text-sm leading-loose text-center">
                     {membro.especialidades.join(' · ')}
                   </p>
                 </div>
