@@ -52,40 +52,36 @@ export default function EquipePage() {
               <div
                 key={membro.nome}
                 style={CARD_STYLE}
-                className="flex flex-col sm:flex-row gap-8 p-8 sm:p-10"
+                className="team-card flex flex-col items-center text-center p-10"
               >
                 {/* Photo */}
-                <div className="shrink-0">
-                  <div className="w-28 h-28 rounded-full border-2 border-[var(--gold)] overflow-hidden">
-                    <img
-                      src={`/images/${membro.iniciais === 'AG' ? 'andrea-goncalves' : 'tiago-cardoso'}.jpg`}
-                      alt={membro.nome}
-                      className="w-full h-full object-cover object-top"
-                    />
-                  </div>
+                <div className="w-28 h-28 rounded-full border-2 border-[var(--gold)] overflow-hidden mb-6">
+                  <img
+                    src={`/images/${membro.iniciais === 'AG' ? 'andrea-goncalves' : 'tiago-cardoso'}.jpg`}
+                    alt={membro.nome}
+                    className="w-full h-full object-cover object-top"
+                  />
                 </div>
 
-                {/* Content */}
-                <div className="flex-1 min-w-0">
-                  <h2
-                    className="font-cormorant font-semibold text-white mb-1 leading-tight"
-                    style={{ fontSize: 'clamp(26px, 2.5vw, 32px)' }}
-                  >
-                    {membro.nome}
-                  </h2>
-                  <p className="text-[var(--gold)] text-xs tracking-[0.2em] uppercase mb-5">
-                    {membro.cargo}
+                <h2
+                  className="font-cormorant font-semibold text-white mb-1 leading-tight"
+                  style={{ fontSize: 'clamp(26px, 2.5vw, 32px)' }}
+                >
+                  {membro.nome}
+                </h2>
+                <p className="text-[var(--gold)] text-xs tracking-[0.2em] uppercase mb-5">
+                  {membro.cargo}
+                </p>
+
+                <div className="mb-8 flex flex-col items-center">
+                  <div className="w-6 h-px bg-[var(--gold)] mb-4" />
+                  <p className="text-white/50 text-sm leading-loose">
+                    {membro.especialidades.join(' · ')}
                   </p>
+                </div>
 
-                  <div className="mb-8">
-                    <div className="w-6 h-px bg-[var(--gold)] mb-4" />
-                    <p className="text-white/50 text-sm leading-loose">
-                      {membro.especialidades.join(' · ')}
-                    </p>
-                  </div>
-
-                  {/* Social links */}
-                  <div className="flex flex-wrap items-center gap-3">
+                {/* Social links */}
+                <div className="flex flex-wrap items-center justify-center gap-3">
                     <a
                       href={WA[membro.iniciais === 'AG' ? 'andrea' : 'tiago']()}
                       target="_blank"
@@ -105,7 +101,6 @@ export default function EquipePage() {
                       Instagram
                     </a>
                   </div>
-                </div>
               </div>
             ))}
           </div>

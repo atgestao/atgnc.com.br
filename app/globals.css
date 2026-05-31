@@ -154,6 +154,18 @@ body {
   font-style: italic;
 }
 
+/* Team card hover effect */
+.team-card {
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+              border-top-color 0.25s ease;
+}
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.35);
+  border-top-color: rgba(201, 168, 76, 0.9) !important;
+}
+
 /* Gold divider line */
 .gold-line {
   width: 48px;
