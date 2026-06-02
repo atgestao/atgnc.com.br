@@ -3,9 +3,26 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Blog',
+  title: 'Blog | AT Gestão de Negócios e Contabilidade',
   description:
-    'Artigos sobre contabilidade, reforma tributária, empreendedorismo e gestão empresarial. Conteúdo especializado da AT Gestão.',
+    'Artigos especializados em contabilidade, reforma tributária, planejamento tributário e gestão financeira para empresas em Cariacica e região. AT Gestão.',
+  keywords: [
+    'blog contabilidade',
+    'reforma tributária',
+    'planejamento tributário',
+    'gestão financeira empresas',
+    'contabilidade Cariacica',
+    'AT Gestão',
+  ],
+  alternates: { canonical: 'https://atgnc.com.br/blog' },
+  openGraph: {
+    type: 'website',
+    url: 'https://atgnc.com.br/blog',
+    title: 'Blog | AT Gestão de Negócios e Contabilidade',
+    description: 'Artigos especializados em contabilidade, reforma tributária e gestão financeira para empresas.',
+    siteName: 'AT Gestão de Negócios e Contabilidade',
+    locale: 'pt_BR',
+  },
 };
 
 const POSTS = [
@@ -13,21 +30,21 @@ const POSTS = [
     slug: 'reforma-tributaria-o-que-muda-para-sua-empresa',
     categoria: 'Reforma Tributária',
     titulo: 'Reforma Tributária: O que muda para a sua empresa em 2025?',
-    resumo: 'Entenda as principais mudanças do IVA dual, CBS e IBS e como se preparar para a transição do sistema tributário brasileiro.',
+    resumo: 'A maior reforma do sistema fiscal brasileiro em décadas está em marcha. Entenda o IVA dual, CBS, IBS, Imposto Seletivo e como planejar a transição para proteger a rentabilidade da sua empresa.',
     data: '10 Mai 2026',
   },
   {
     slug: 'como-escolher-o-regime-tributario-ideal',
     categoria: 'Contabilidade',
     titulo: 'Como escolher o regime tributário ideal para o seu negócio',
-    resumo: 'Simples Nacional, Lucro Presumido ou Lucro Real? Descubra qual regime tributário é mais vantajoso para a sua empresa.',
+    resumo: 'Simples Nacional, Lucro Presumido ou Lucro Real? A escolha errada pode custar milhares de reais por ano. Entenda os critérios, veja exemplos práticos e descubra qual regime é realmente mais vantajoso para o seu negócio.',
     data: '25 Abr 2026',
   },
   {
     slug: 'planejamento-financeiro-para-pequenas-empresas',
     categoria: 'Consultoria',
     titulo: 'Planejamento financeiro para pequenas empresas: por onde começar',
-    resumo: 'Um guia prático para MEIs e MEs que querem organizar suas finanças e crescer de forma sustentável.',
+    resumo: 'A maioria dos pequenos negócios não fecha por falta de clientes — fecha por falta de gestão financeira. Um guia prático com fluxo de caixa, DRE, capital de giro e os indicadores essenciais para MEIs, MEs e EPPs crescerem com solidez.',
     data: '08 Abr 2026',
   },
 ];
