@@ -29,7 +29,7 @@ const POSTS = [
   {
     slug: 'reforma-tributaria-o-que-muda-para-sua-empresa',
     categoria: 'Reforma Tributária',
-    titulo: 'Reforma Tributária: O que muda para a sua empresa em 2025?',
+    titulo: 'Reforma Tributária: O que muda para a sua empresa em 2026?',
     resumo: 'A maior reforma do sistema fiscal brasileiro em décadas está em marcha. Entenda o IVA dual, CBS, IBS, Imposto Seletivo e como planejar a transição para proteger a rentabilidade da sua empresa.',
     data: '10 Mai 2026',
   },
