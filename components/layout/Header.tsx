@@ -68,7 +68,7 @@ export function Header() {
               />
             </Link>
 
-            <nav className="hidden md:flex items-center gap-8" aria-label="Navegação principal">
+            <nav className="hidden md:flex items-center gap-5" aria-label="Navegação principal">
               {NAV.map((item) => (
                 <Link
                   key={item.href}
