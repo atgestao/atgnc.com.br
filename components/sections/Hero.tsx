@@ -59,13 +59,13 @@ export function Hero() {
           variants={stagger}
           initial="hidden"
           animate="visible"
-          className="max-w-5xl"
+          className="max-w-5xl mx-auto text-center"
         >
           <motion.p variants={fadeInUp} className="eyebrow mb-10">
             Escritório de Contabilidade &amp; Consultoria · Cariacica, ES
           </motion.p>
 
-          <motion.div variants={fadeInUp} className="mb-10">
+          <motion.div variants={fadeInUp} className="mb-10 flex justify-center">
             <div className="gold-line" />
           </motion.div>
 
@@ -80,7 +80,7 @@ export function Hero() {
 
           <motion.p
             variants={fadeInUp}
-            className="text-white/60 leading-relaxed max-w-2xl mb-14"
+            className="text-white/60 leading-relaxed max-w-2xl mx-auto mb-14"
             style={{ fontSize: 'clamp(15px, 1.4vw, 18px)' }}
           >
             Contabilidade especializada, consultoria empresarial e capacitação
@@ -88,7 +88,7 @@ export function Hero() {
             e região.
           </motion.p>
 
-          <motion.div variants={fadeInUp} className="flex flex-wrap gap-4">
+          <motion.div variants={fadeInUp} className="flex flex-wrap gap-4 justify-center">
             <a
               href={WA.andrea(MSG.geral)}
               target="_blank"
