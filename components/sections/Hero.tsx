@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { fadeInUp, stagger } from '@/lib/animations';
@@ -8,15 +9,27 @@ import { WA, MSG } from '@/lib/whatsapp';
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-[var(--navy)]">
+      {/* Background photo */}
+      <div className="absolute inset-0" aria-hidden="true">
+        <Image
+          src="/images/andrea-thiago.webp"
+          alt=""
+          fill
+          priority
+          className="object-cover object-center"
+          sizes="100vw"
+        />
+      </div>
+
       {/* Geometric grid */}
       <div className="absolute inset-0 geo-grid" aria-hidden="true" />
 
-      {/* Gradient overlay */}
+      {/* Gradient overlay — stronger on the left to keep text legible */}
       <div
         className="absolute inset-0"
         style={{
           background:
-            'linear-gradient(135deg, rgba(26,43,74,0.97) 0%, rgba(45,74,122,0.80) 100%)',
+            'linear-gradient(105deg, rgba(26,43,74,0.97) 0%, rgba(26,43,74,0.92) 45%, rgba(26,43,74,0.50) 70%, rgba(26,43,74,0.20) 100%)',
         }}
         aria-hidden="true"
       />
