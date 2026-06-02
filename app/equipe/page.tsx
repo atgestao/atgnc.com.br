@@ -31,11 +31,11 @@ export default function EquipePage() {
     <>
       {/* Hero */}
       <section className="pt-40 pb-24 bg-[var(--navy)]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
           <p className="eyebrow mb-4">Nossa Equipe</p>
-          <div className="gold-line mb-6" />
+          <div className="gold-line mb-6 mx-auto" />
           <h1
-            className="font-cormorant font-light text-white leading-tight max-w-3xl"
+            className="font-cormorant font-light text-white leading-tight"
             style={{ fontSize: 'clamp(40px, 5vw, 64px)' }}
           >
             Profissionais dedicados ao{' '}
@@ -46,7 +46,7 @@ export default function EquipePage() {
 
       {/* Team cards */}
       <section className="py-24 bg-[var(--navy)]" style={GRID_BG}>
-        <div className="max-w-3xl mx-auto px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-6">
             {EQUIPE.map((membro) => (
               <div
