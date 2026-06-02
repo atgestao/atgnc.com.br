@@ -119,7 +119,7 @@ body {
 
 /* Nav link style */
 .nav-link {
-  font-size: clamp(12px, 1vw, 14px);
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.21em;
   text-transform: uppercase;
