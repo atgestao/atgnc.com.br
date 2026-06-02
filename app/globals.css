@@ -16,16 +16,16 @@
   --font-jost: var(--font-jost);
 
   /* Type scale */
-  --text-xs: 12px;
-  --text-sm: 15px;
-  --text-md: 18px;
-  --text-lg: 21px;
-  --text-xl: 24px;
-  --text-2xl: 30px;
-  --text-3xl: 33px;
-  --text-4xl: 39px;
-  --text-5xl: 60px;
-  --text-hero: 69px;
+  --text-xs: 13px;
+  --text-sm: 16px;
+  --text-md: 19px;
+  --text-lg: 22px;
+  --text-xl: 26px;
+  --text-2xl: 32px;
+  --text-3xl: 38px;
+  --text-4xl: 44px;
+  --text-5xl: 64px;
+  --text-hero: 76px;
 
   /* Spacing */
   --spacing-1: 6px;
@@ -48,16 +48,16 @@
   --ink-muted:  #4A4A52;
   --border:     #E2DDD4;
 
-  --text-xs:   12px;
-  --text-sm:   15px;
-  --text-md:   18px;
-  --text-lg:   21px;
-  --text-xl:   24px;
-  --text-2xl:  30px;
-  --text-3xl:  33px;
-  --text-4xl:  39px;
-  --text-5xl:  60px;
-  --text-hero: 69px;
+  --text-xs:   13px;
+  --text-sm:   16px;
+  --text-md:   19px;
+  --text-lg:   22px;
+  --text-xl:   26px;
+  --text-2xl:  32px;
+  --text-3xl:  38px;
+  --text-4xl:  44px;
+  --text-5xl:  64px;
+  --text-hero: 76px;
 
   --space-1:  6px;
   --space-2:  9px;
@@ -79,8 +79,8 @@ body {
   background-color: var(--cream);
   color: var(--ink);
   font-family: var(--font-jost), system-ui, sans-serif;
-  font-size: var(--text-sm);
-  line-height: 1.7;
+  font-size: clamp(16px, 1.5vw, 19px);
+  line-height: 1.75;
 }
 
 :focus-visible {
@@ -110,16 +110,16 @@ body {
 /* Eyebrow label style */
 .eyebrow {
   font-family: var(--font-jost), system-ui, sans-serif;
-  font-size: var(--text-xs);
+  font-size: clamp(13px, 1.1vw, 15px);
   font-weight: 500;
-  letter-spacing: 0.39em;
+  letter-spacing: 0.35em;
   text-transform: uppercase;
   color: var(--gold);
 }
 
 /* Nav link style */
 .nav-link {
-  font-size: var(--text-xs);
+  font-size: clamp(12px, 1vw, 14px);
   font-weight: 500;
   letter-spacing: 0.21em;
   text-transform: uppercase;
