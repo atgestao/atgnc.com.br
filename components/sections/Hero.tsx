@@ -8,7 +8,7 @@ import { WA, MSG } from '@/lib/whatsapp';
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-[var(--navy)]">
+    <section className="relative min-h-screen flex items-end overflow-hidden bg-[var(--navy)]">
       {/* Background photo */}
       <div className="absolute inset-0" aria-hidden="true">
         <Image
@@ -54,17 +54,13 @@ export function Hero() {
         aria-hidden="true"
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-36 pb-28">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-36 pb-16 w-full">
         <motion.div
           variants={stagger}
           initial="hidden"
           animate="visible"
           className="max-w-5xl mx-auto text-center"
         >
-          <motion.div variants={fadeInUp} className="mb-10 flex justify-center">
-            <div className="gold-line" />
-          </motion.div>
-
           <motion.h1
             variants={fadeInUp}
             className="font-cormorant font-light text-white mb-10"
