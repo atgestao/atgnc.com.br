@@ -19,17 +19,17 @@ type Post = {
 
 const POSTS: Record<string, Post> = {
   'reforma-tributaria-o-que-muda-para-sua-empresa': {
-    titulo: 'Reforma Tributária: O que muda para a sua empresa em 2025?',
+    titulo: 'Reforma Tributária: O que muda para a sua empresa em 2026?',
     categoria: 'Reforma Tributária',
-    data: '10 Mai 2026',
-    dataISO: '2026-05-10',
+    data: '02 Jun 2026',
+    dataISO: '2026-06-02',
     resumo:
-      'A maior reforma do sistema fiscal brasileiro em décadas está em marcha. Entenda o IVA dual, CBS, IBS, Imposto Seletivo e como planejar a transição para proteger sua empresa.',
+      '2026 é o ano em que a reforma tributária deixou de ser teoria: CBS e IBS já estão sendo cobrados experimentalmente. Entenda o que mudou, o que ainda vai mudar e como proteger a rentabilidade da sua empresa durante a transição.',
     keywords: [
-      'reforma tributária 2025',
+      'reforma tributária 2026',
       'IVA dual',
-      'CBS',
-      'IBS',
+      'CBS 2026',
+      'IBS 2026',
       'imposto seletivo',
       'reforma tributária empresa',
       'contabilidade Cariacica',
@@ -37,27 +37,31 @@ const POSTS: Record<string, Post> = {
     ],
     sections: [
       {
-        body: 'A reforma tributária aprovada pela Emenda Constitucional nº 132/2023 representa a maior transformação do sistema fiscal brasileiro em mais de três décadas. Para empresários de todos os portes, compreender as mudanças e começar o planejamento agora é a diferença entre aproveitar oportunidades e ser pego de surpresa durante a transição.',
+        body: 'A reforma tributária aprovada pela Emenda Constitucional nº 132/2023 deixou de ser uma promessa futura: em 2026, CBS e IBS passaram à fase de cobrança experimental, e as empresas brasileiras estão pela primeira vez operando sob dois sistemas tributários simultaneamente. Para quem ainda não tomou nenhuma providência, o momento de agir é agora.',
       },
       {
-        heading: 'O fim dos cinco tributos e o nascimento do IVA dual',
-        body: 'O coração da reforma é a extinção gradual de cinco tributos — PIS, Cofins, IPI, ICMS e ISS — e sua substituição por um IVA dual composto por dois novos impostos:\n\n• CBS (Contribuição sobre Bens e Serviços): tributo federal que unifica PIS e Cofins. Incidirá de forma não cumulativa sobre toda a cadeia produtiva.\n\n• IBS (Imposto sobre Bens e Serviços): tributo de competência compartilhada entre estados e municípios, substituindo ICMS e ISS. Terá alíquota única por ente federativo e regras uniformes em todo o território nacional.\n\nAlém do IVA dual, o Imposto Seletivo (IS) incidirá sobre produtos e serviços considerados prejudiciais à saúde ou ao meio ambiente, como bebidas alcoólicas, tabaco e veículos de alta emissão.',
+        heading: 'O que já está em vigor em 2026',
+        body: 'A partir de janeiro de 2026, duas novas contribuições passaram a ser cobradas com alíquotas reduzidas em caráter experimental:\n\n• CBS (Contribuição sobre Bens e Serviços): alíquota de 0,9%, de competência federal, unificando PIS e Cofins numa única cobrança não cumulativa.\n\n• IBS (Imposto sobre Bens e Serviços): alíquota de 0,1%, de competência compartilhada entre estados e municípios, destinado a substituir ICMS e ISS.\n\nNesse período de teste, as empresas recolhem os tributos dos dois sistemas em paralelo — o antigo (PIS, Cofins, ICMS, ISS) e o novo (CBS e IBS). O objetivo é testar a operacionalização antes da implantação plena. O valor pago de CBS e IBS pode ser abatido do PIS e Cofins devidos, evitando bitributação.',
       },
       {
-        heading: 'Cronograma de transição: 2026 a 2032',
-        body: 'A implantação ocorrerá de forma faseada para dar tempo ao setor produtivo de se adaptar:\n\n• 2026: início da cobrança experimental de CBS e IBS com alíquotas reduzidas (0,9% e 0,1% respectivamente). As empresas podem escolher recolher pelo sistema atual ou pelo novo.\n\n• 2027: CBS entra em vigor plena. PIS e Cofins são extintos.\n\n• 2029 a 2032: redução progressiva das alíquotas de ICMS e ISS à medida que o IBS ganha peso. Em 2033 ambos são extintos definitivamente.\n\nEsse período de convivência entre os dois sistemas exige atenção redobrada da contabilidade, pois obrigações acessórias dos regimes antigos e novos coexistirão simultaneamente.',
+        heading: 'Cronograma: o que vem a seguir (2027–2033)',
+        body: '• 2027: CBS entra em vigor plena com sua alíquota definitiva. PIS e Cofins são extintos. O IBS segue com alíquota reduzida.\n\n• 2029: IBS começa a subir progressivamente enquanto as alíquotas de ICMS e ISS começam a cair.\n\n• 2029 a 2032: redução gradual de ICMS e ISS (25% ao ano), substituídos pelo IBS.\n\n• 2033: extinção total de ICMS e ISS. O sistema do IVA dual opera em plena capacidade.\n\nO Imposto Seletivo (IS) — que incide sobre produtos prejudiciais à saúde e ao meio ambiente como bebidas alcoólicas, tabaco, veículos poluentes e apostas — também entra em vigor ao longo desse período conforme regulamentação complementar.',
       },
       {
-        heading: 'Impactos práticos por setor',
-        body: 'Comércio e indústria: a não cumulatividade ampla do IBS/CBS tende a reduzir o efeito cascata de impostos, beneficiando cadeias com muitas etapas produtivas. Porém, empresas no Simples Nacional precisam avaliar cuidadosamente, pois o regime diferenciado para pequenos negócios ainda está em regulamentação.\n\nPrestadores de serviços: historicamente sobrecarregados pelo ISS municipal fragmentado, poderão se beneficiar da uniformização de alíquotas. Atenção especial para serviços de saúde, educação e financeiros, que têm regimes diferenciados previstos na reforma.\n\nAgronegócio: setor com tratamento específico na PEC, com alíquotas reduzidas e possibilidade de crédito presumido para pequenos produtores rurais.',
+        heading: 'Os desafios práticos da coexistência dos dois sistemas',
+        body: 'O período 2026–2032 é o mais complexo para a contabilidade empresarial, justamente pela necessidade de gerenciar os dois regimes em paralelo. Os principais desafios são:\n\nObrigações acessórias dobradas: as empresas precisam manter as escriturações do sistema antigo (SPED, EFD-Contribuições, GIA, etc.) e ao mesmo tempo aprender as novas obrigações do CBS/IBS.\n\nGestão de créditos: o novo sistema é amplamente não cumulativo, o que gera créditos de CBS e IBS a compensar. Empresas que não monitorarem esses créditos perderão dinheiro.\n\nSplit payment: o mecanismo de pagamento automático previsto na reforma — onde o imposto é retido na própria transação financeira antes de chegar ao vendedor — exigirá adaptação nos sistemas de fluxo de caixa.\n\nPreços e contratos: cláusulas de reajuste tributário precisam ser revisadas, pois a mudança na estrutura de custos pode afetar margens e relacionamentos comerciais.',
+      },
+      {
+        heading: 'Impactos por porte e setor em 2026',
+        body: 'Simples Nacional: as micro e pequenas empresas têm regime diferenciado previsto na reforma, mas a regulamentação ainda está sendo finalizada. É fundamental acompanhar as leis complementares para entender se haverá opção de recolhimento conjunto.\n\nPrestadores de serviços: são os que mais ganham com a uniformização de regras, especialmente empresas que atuam em múltiplos municípios e hoje lidam com ISS diferente em cada cidade.\n\nComércio e indústria: beneficiados pela não cumulatividade ampla, especialmente em cadeias longas onde o efeito cascata do ICMS era mais intenso.\n\nAgronegócio: conta com alíquotas reduzidas de CBS/IBS e crédito presumido para produtores rurais não contribuintes.',
       },
       {
         heading: 'O que sua empresa deve fazer agora',
-        body: 'Não espere a transição chegar para agir. As empresas que saírem na frente terão vantagem competitiva real. Recomendamos quatro frentes de ação imediata:\n\n1. Diagnóstico tributário completo: mapeie sua carga tributária atual, identificando quanto de PIS, Cofins, ICMS e ISS você recolhe e em quais etapas da cadeia.\n\n2. Simulação do impacto do novo sistema: calcule a alíquota de referência do IBS/CBS para o seu setor e compare com a carga atual. Em muitos casos, há oportunidade de redução de carga.\n\n3. Revisão de contratos e preços: a mudança na estrutura tributária pode afetar margens e precificação. Cláusulas de reajuste por mudança tributária devem ser revisadas.\n\n4. Treinamento da equipe financeira: o novo sistema exige familiaridade com créditos de IBS/CBS, split payment (mecanismo de pagamento automático previsto na reforma) e as novas obrigações acessórias.',
+        body: 'Com a cobrança experimental já em curso, não há mais espaço para esperar. As quatro ações prioritárias para 2026 são:\n\n1. Calcular o impacto real: compare sua carga tributária atual com a estimada sob o novo sistema. Em muitos setores há redução efetiva — mas em outros, especialmente serviços intensivos em mão de obra, a carga pode aumentar.\n\n2. Adaptar o sistema de gestão: seu ERP ou software de emissão de notas já está preparado para emitir documentos com CBS e IBS? Muitos sistemas ainda estão em atualização.\n\n3. Treinar o time financeiro: a equipe que cuida de contas a pagar, contas a receber e apuração de impostos precisa entender a lógica do novo sistema, especialmente o aproveitamento de créditos.\n\n4. Revisar precificação: se você vende para outras empresas, seus clientes podem exigir crédito de CBS/IBS na nota fiscal. Isso muda a negociação de preços.',
       },
       {
         heading: 'Como a AT Gestão pode ajudar sua empresa',
-        body: 'Nossa equipe acompanha de perto toda a regulamentação complementar da reforma tributária e está preparada para conduzir o diagnóstico e o planejamento da sua empresa. Oferecemos análise personalizada do impacto no seu setor, modelagem financeira dos cenários de transição e suporte contínuo ao longo de todo o período 2026–2033. Entre em contato e agende uma conversa sem compromisso.',
+        body: 'Nossa equipe está atualizada com toda a regulamentação complementar da reforma e já está auxiliando clientes na adaptação ao período de transição. Oferecemos diagnóstico tributário completo, simulação de impacto do novo sistema no seu setor, adequação das obrigações acessórias e acompanhamento contínuo ao longo de todo o período 2026–2033. Entre em contato e agende uma conversa sem compromisso.',
       },
     ],
   },
