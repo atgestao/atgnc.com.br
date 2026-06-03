@@ -64,7 +64,7 @@ export const SERVICOS_CONTEUDO: ServicoConteudo[] = [
   {
     slug: 'prestacao-de-contas',
     intro:
-      'Cumprir as obrigações acessórias no prazo certo é essencial para evitar multas, juros e complicações com o Fisco. A AT Gestão cuida de toda a prestação de contas da sua empresa — desde as declarações mensais até as obrigações anuais —, garantindo entrega pontual, dados corretos e total conformidade com a legislação vigente. Você foca no negócio; nós cuidamos do que o governo exige.',
+      'Cumprir as obrigações acessórias no prazo certo é essencial para evitar multas, juros e complicações com o Fisco. A AT Gestão cuida de toda a prestação de contas da sua empresa, desde as declarações mensais até as obrigações anuais, garantindo entrega pontual, dados corretos e total conformidade com a legislação vigente. Você foca no negócio; nós cuidamos do que o governo exige.',
     beneficios: [
       {
         titulo: 'Zero multas por atraso',
@@ -85,7 +85,7 @@ export const SERVICOS_CONTEUDO: ServicoConteudo[] = [
     ],
     inclui: [
       'SPED Contábil e SPED Fiscal',
-      'ECF — Escrituração Contábil Fiscal',
+      'ECF: Escrituração Contábil Fiscal',
       'EFD Contribuições (PIS/COFINS)',
       'DCTF, DCTF-Web e DIRF',
       'RAIS e eSocial',
@@ -114,7 +114,7 @@ export const SERVICOS_CONTEUDO: ServicoConteudo[] = [
   {
     slug: 'reforma-tributaria',
     intro:
-      'A Reforma Tributária brasileira representa a maior mudança no sistema fiscal do país em décadas. A substituição de PIS, COFINS, IPI, ICMS e ISS por dois novos tributos — CBS e IBS — impacta preços, margens, contratos e processos de toda empresa. A AT Gestão oferece análise personalizada do impacto na sua operação e um plano de transição para que você chegue à nova realidade tributária preparado e competitivo.',
+      'A Reforma Tributária brasileira representa a maior mudança no sistema fiscal do país em décadas. A substituição de PIS, COFINS, IPI, ICMS e ISS por dois novos tributos, CBS e IBS, que impacta preços, margens, contratos e processos de toda empresa. A AT Gestão oferece análise personalizada do impacto na sua operação e um plano de transição para que você chegue à nova realidade tributária preparado e competitivo.',
     beneficios: [
       {
         titulo: 'Diagnóstico personalizado',
@@ -166,7 +166,7 @@ export const SERVICOS_CONTEUDO: ServicoConteudo[] = [
   {
     slug: 'consultoria-empresarial',
     intro:
-      'Crescer de forma sustentável exige mais do que intuição — exige dados, estratégia e um olhar externo qualificado. A AT Gestão oferece consultoria empresarial que combina análise financeira profunda com visão de negócios prática, ajudando empreendedores a identificar problemas, corrigir rotas e construir operações mais sólidas e rentáveis. Do diagnóstico ao plano de ação, estamos ao seu lado em cada decisão.',
+      'Crescer de forma sustentável exige mais do que intuição: exige dados, estratégia e um olhar externo qualificado. A AT Gestão oferece consultoria empresarial que combina análise financeira profunda com visão de negócios prática, ajudando empreendedores a identificar problemas, corrigir rotas e construir operações mais sólidas e rentáveis. Do diagnóstico ao plano de ação, estamos ao seu lado em cada decisão.',
     beneficios: [
       {
         titulo: 'Visão clara da situação real',
@@ -219,7 +219,7 @@ export const SERVICOS_CONTEUDO: ServicoConteudo[] = [
     beneficios: [
       {
         titulo: 'Abertura ágil e sem erros',
-        descricao: 'Cuidamos de todo o processo burocrático — CNPJ, Alvará, Inscrições Estadual e Municipal — sem que você precise perder tempo em filas ou cartórios.',
+        descricao: 'Cuidamos de todo o processo burocrático: CNPJ, Alvará, Inscrições Estadual e Municipal, sem que você precise perder tempo em filas ou cartórios.',
       },
       {
         titulo: 'Regime tributário ideal desde o início',
@@ -269,7 +269,7 @@ export const SERVICOS_CONTEUDO: ServicoConteudo[] = [
   {
     slug: 'capacitacao-de-equipe',
     intro:
-      'Uma empresa só tão forte quanto as pessoas que a conduzem. A AT Gestão oferece treinamentos práticos e personalizados para que sua equipe domine gestão financeira, controles internos e ferramentas de produtividade — transformando colaboradores em profissionais mais seguros, eficientes e alinhados com os objetivos do negócio. Os treinamentos são desenvolvidos sob medida para a realidade e o nível de cada equipe.',
+      'Uma empresa só tão forte quanto as pessoas que a conduzem. A AT Gestão oferece treinamentos práticos e personalizados para que sua equipe domine gestão financeira, controles internos e ferramentas de produtividade, transformando colaboradores em profissionais mais seguros, eficientes e alinhados com os objetivos do negócio. Os treinamentos são desenvolvidos sob medida para a realidade e o nível de cada equipe.',
     beneficios: [
       {
         titulo: 'Equipe financeiramente letrada',

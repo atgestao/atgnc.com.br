@@ -50,7 +50,7 @@ export default function SobrePage() {
               <div className="space-y-4 text-[var(--ink-muted)] text-sm leading-relaxed">
                 <p>
                   A AT Gestão nasceu da visão de Andréa Gonçalves e Tiago Cardoso em oferecer
-                  um serviço contábil que vai além do cumprimento de obrigações fiscais —
+                  um serviço contábil que vai além do cumprimento de obrigações fiscais:
                   um escritório que seja verdadeiramente parceiro do empresário.
                 </p>
                 <p>

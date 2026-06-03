@@ -44,7 +44,7 @@ const POSTS = [
     slug: 'planejamento-financeiro-para-pequenas-empresas',
     categoria: 'Consultoria',
     titulo: 'Planejamento financeiro para pequenas empresas: por onde começar',
-    resumo: 'A maioria dos pequenos negócios não fecha por falta de clientes — fecha por falta de gestão financeira. Um guia prático com fluxo de caixa, DRE, capital de giro e os indicadores essenciais para MEIs, MEs e EPPs crescerem com solidez.',
+    resumo: 'A maioria dos pequenos negócios não fecha por falta de clientes, mas por falta de gestão financeira. Um guia prático com fluxo de caixa, DRE, capital de giro e os indicadores essenciais para MEIs, MEs e EPPs crescerem com solidez.',
     data: '08 Abr 2026',
   },
 ];
