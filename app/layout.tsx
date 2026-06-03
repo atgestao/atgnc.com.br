@@ -45,7 +45,24 @@ export const metadata: Metadata = {
     locale: 'pt_BR',
     url: 'https://atgnc.com.br',
     siteName: 'AT Gestão de Negócios e Contabilidade',
-    images: [{ url: 'https://atgnc.com.br/og-image.jpg', width: 1200, height: 630 }],
+    title: 'AT Gestão | Contabilidade e Consultoria Empresarial — Cariacica, ES',
+    description:
+      'Escritório de contabilidade especializado em reforma tributária, consultoria empresarial e capacitação de equipes. Andréa Gonçalves e Tiago Cardoso, Contadores CRC/ES.',
+    images: [
+      {
+        url: '/images/andrea-thiago.webp',
+        width: 1400,
+        height: 788,
+        alt: 'Andréa Gonçalves e Tiago Cardoso — AT Gestão de Negócios e Contabilidade',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AT Gestão | Contabilidade e Consultoria Empresarial — Cariacica, ES',
+    description:
+      'Escritório de contabilidade especializado em reforma tributária, consultoria empresarial e capacitação de equipes. Cariacica, ES.',
+    images: ['/images/andrea-thiago.webp'],
   },
   alternates: { canonical: 'https://atgnc.com.br' },
   robots: { index: true, follow: true },
