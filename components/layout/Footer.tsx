@@ -71,7 +71,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/10 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="border-t border-white/10 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
           <p className="text-white/40 text-xs tracking-wide">
             © {year} AT Gestão de Negócios e Contabilidade. Todos os direitos reservados.
           </p>
