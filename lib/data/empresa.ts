@@ -27,7 +27,7 @@ export const EQUIPE = [
   {
     nome: 'Andréa Gonçalves',
     iniciais: 'AG',
-    cargo: 'Contadora | Sócia-Fundadora',
+    cargo: 'Contabilista | Sócia-Fundadora',
     especialidades: [
       'Contabilidade',
       'Prestação de Contas',
@@ -43,7 +43,7 @@ export const EQUIPE = [
   {
     nome: 'Tiago Cardoso',
     iniciais: 'TC',
-    cargo: 'Contador | Sócio',
+    cargo: 'Contador | Sócio-Fundador',
     especialidades: [
       'Contabilidade',
       'Prestação de Contas',
