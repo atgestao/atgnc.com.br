@@ -4,7 +4,7 @@ import { ContactForm } from '@/components/forms/ContactForm';
 import { WA } from '@/lib/whatsapp';
 
 export const metadata: Metadata = {
-  title: 'Reforma Tributária — Prepare sua Empresa',
+  title: 'Reforma Tributária: Prepare sua Empresa',
   description:
     'Entenda o impacto da Reforma Tributária no seu negócio. IVA dual, CBS, IBS e IS: análise especializada pela AT Gestão de Negócios e Contabilidade.',
 };

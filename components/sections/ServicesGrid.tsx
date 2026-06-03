@@ -33,7 +33,7 @@ export function ServicesGrid() {
             eyebrow="O que fazemos"
             title="Soluções completas para"
             titleAccent="seu negócio"
-            description="Da abertura da empresa ao crescimento sustentável — oferecemos suporte especializado em todas as etapas da jornada empresarial."
+            description="Da abertura da empresa ao crescimento sustentável : oferecemos suporte especializado em todas as etapas da jornada empresarial."
           />
         </div>
 

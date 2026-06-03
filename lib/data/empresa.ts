@@ -96,7 +96,7 @@ export const SERVICOS = [
     numero: '05',
     titulo: 'Empreendedorismo',
     descricao:
-      'Abertura de empresas, escolha do regime tributário ideal, MEI, ME, EPP — suporte completo desde o primeiro passo.',
+      'Abertura de empresas, escolha do regime tributário ideal, MEI, ME, EPP: suporte completo desde o primeiro passo.',
     icone: 'Rocket',
   },
   {
