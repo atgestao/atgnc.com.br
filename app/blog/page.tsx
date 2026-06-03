@@ -80,10 +80,10 @@ export default function BlogPage() {
                   <span className="text-[var(--border)]">·</span>
                   <span className="text-[var(--ink-muted)] text-xs">{post.data}</span>
                 </div>
-                <h2 className="font-cormorant text-[var(--text-2xl)] font-semibold text-[var(--navy)] mb-3 leading-tight group-hover:text-[var(--gold)] transition-colors">
+                <h2 className="font-cormorant font-semibold text-[var(--navy)] mb-3 leading-tight group-hover:text-[var(--gold)] transition-colors" style={{ fontSize: 'clamp(24px, 3vw, 34px)' }}>
                   {post.titulo}
                 </h2>
-                <p className="text-[var(--ink-muted)] text-sm leading-relaxed mb-6">{post.resumo}</p>
+                <p className="text-[var(--ink-muted)] leading-relaxed mb-6" style={{ fontSize: 'clamp(14px, 1.2vw, 16px)' }}>{post.resumo}</p>
                 <span className="inline-flex items-center gap-2 text-[var(--gold)] text-xs font-medium tracking-[0.15em] uppercase group-hover:gap-3 transition-all duration-200">
                   Ler artigo <ArrowRight size={14} />
                 </span>
