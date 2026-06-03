@@ -5,9 +5,22 @@ import { EMPRESA } from '@/lib/data/empresa';
 import { WA } from '@/lib/whatsapp';
 
 export const metadata: Metadata = {
-  title: 'Contato',
+  title: 'Contato | AT Gestão',
   description:
-    'Entre em contato com a AT Gestão de Negócios e Contabilidade. Atendimento em Cariacica, ES e toda a Grande Vitória.',
+    'Fale com a AT Gestão de Negócios e Contabilidade. Atendimento presencial em Cariacica, ES e online para toda a Grande Vitória. WhatsApp, e-mail e formulário de contato.',
+  keywords: [
+    'contato contabilidade Cariacica',
+    'contador Cariacica ES',
+    'whatsapp contador',
+    'escritório contabilidade Grande Vitória',
+  ],
+  alternates: { canonical: 'https://atgnc.com.br/contato' },
+  openGraph: {
+    title: 'Contato | AT Gestão de Negócios e Contabilidade',
+    description: 'Entre em contato com a AT Gestão. Atendimento em Cariacica e Grande Vitória, ES.',
+    url: 'https://atgnc.com.br/contato',
+    images: [{ url: '/images/andrea-thiago.webp', width: 1400, height: 788, alt: 'AT Gestão — Contato' }],
+  },
 };
 
 export default function ContatoPage() {

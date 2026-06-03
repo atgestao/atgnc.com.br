@@ -2,9 +2,23 @@ import type { Metadata } from 'next';
 import { CTABanner } from '@/components/sections/CTABanner';
 
 export const metadata: Metadata = {
-  title: 'Sobre Nós',
+  title: 'Sobre Nós | AT Gestão',
   description:
-    'Conheça a AT Gestão de Negócios e Contabilidade — nossa história, valores e o time que cuida do seu negócio em Cariacica, ES.',
+    'Conheça a AT Gestão de Negócios e Contabilidade — mais de uma década cuidando das finanças de empresas em Cariacica e Grande Vitória, ES. Andréa Gonçalves e Tiago Cardoso, contadores CRC/ES.',
+  keywords: [
+    'sobre AT Gestão',
+    'escritório contabilidade Cariacica',
+    'Andréa Gonçalves contadora',
+    'Tiago Cardoso contador',
+    'contabilidade Grande Vitória',
+  ],
+  alternates: { canonical: 'https://atgnc.com.br/sobre' },
+  openGraph: {
+    title: 'Sobre Nós | AT Gestão de Negócios e Contabilidade',
+    description: 'Conheça a equipe por trás da AT Gestão — contadores especializados em Cariacica, ES.',
+    url: 'https://atgnc.com.br/sobre',
+    images: [{ url: '/images/andrea-thiago.webp', width: 1400, height: 788, alt: 'Andréa Gonçalves e Tiago Cardoso — AT Gestão' }],
+  },
 };
 
 export default function SobrePage() {

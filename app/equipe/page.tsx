@@ -5,9 +5,22 @@ import { WA } from '@/lib/whatsapp';
 import { CTABanner } from '@/components/sections/CTABanner';
 
 export const metadata: Metadata = {
-  title: 'Equipe',
+  title: 'Nossa Equipe | AT Gestão',
   description:
-    'Conheça Andréa Gonçalves e Tiago Cardoso, os contadores especializados por trás da AT Gestão de Negócios e Contabilidade.',
+    'Conheça Andréa Gonçalves (Contadora CRC/ES, Sócia-Fundadora) e Tiago Cardoso (Contador CRC/ES, Sócio) — os profissionais especializados por trás da AT Gestão de Negócios e Contabilidade em Cariacica, ES.',
+  keywords: [
+    'Andréa Gonçalves contadora Cariacica',
+    'Tiago Cardoso contador ES',
+    'equipe contabilidade Cariacica',
+    'contador CRC Espírito Santo',
+  ],
+  alternates: { canonical: 'https://atgnc.com.br/equipe' },
+  openGraph: {
+    title: 'Nossa Equipe | AT Gestão de Negócios e Contabilidade',
+    description: 'Andréa Gonçalves e Tiago Cardoso — contadores especializados em Cariacica, ES.',
+    url: 'https://atgnc.com.br/equipe',
+    images: [{ url: '/images/andrea-thiago.webp', width: 1400, height: 788, alt: 'Andréa Gonçalves e Tiago Cardoso — AT Gestão' }],
+  },
 };
 
 const GRID_BG: React.CSSProperties = {

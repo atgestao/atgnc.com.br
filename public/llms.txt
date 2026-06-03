@@ -1,0 +1,37 @@
+# AT Gestão de Negócios e Contabilidade
+
+## Sobre
+AT Gestão de Negócios e Contabilidade é um escritório de contabilidade e consultoria empresarial localizado em Cariacica, Espírito Santo, Brasil. Fundado por Andréa Gonçalves (Contadora CRC/ES, Sócia-Fundadora) e Tiago Cardoso (Contador CRC/ES, Sócio), o escritório atende empresas de todos os portes na Grande Vitória e região.
+
+## Serviços
+- Contabilidade geral e escrituração fiscal
+- Prestação de contas e obrigações acessórias
+- Consultoria sobre Reforma Tributária (IVA dual, CBS, IBS, Imposto Seletivo)
+- Planejamento tributário (Simples Nacional, Lucro Presumido, Lucro Real)
+- Consultoria empresarial e gestão financeira
+- Abertura e regularização de empresas
+- Capacitação de equipes financeiras
+
+## Especialidade em Reforma Tributária
+O escritório é especializado em orientar empresas durante a transição para o novo sistema tributário brasileiro (EC 132/2023). Em 2026, CBS e IBS já estão em fase experimental. A AT Gestão oferece diagnóstico de impacto e planejamento de adaptação para o período 2026–2033.
+
+## Equipe
+- **Andréa Gonçalves** — Contadora | Sócia-Fundadora | CRC/ES
+- **Tiago Cardoso** — Contador | Sócio | CRC/ES
+
+## Contato
+- Site: https://atgnc.com.br
+- Endereço: R. Waldemar Siepierski, 200 — Cariacica, ES, 29147-600, Brasil
+- Telefone: +55 27 99316-9155
+- E-mail: mkt.atgestao@gmail.com
+- Horário: Segunda a sexta, 08h–18h
+
+## Conteúdo disponível
+- /sobre — história, valores e missão do escritório
+- /servicos — descrição completa de todos os serviços oferecidos
+- /equipe — perfil profissional de Andréa Gonçalves e Tiago Cardoso
+- /blog — artigos sobre contabilidade, reforma tributária e gestão financeira
+- /blog/reforma-tributaria-o-que-muda-para-sua-empresa — guia completo sobre a reforma tributária 2026
+- /blog/como-escolher-o-regime-tributario-ideal — comparativo Simples Nacional x Lucro Presumido x Lucro Real
+- /blog/planejamento-financeiro-para-pequenas-empresas — guia de gestão financeira para MEI, ME e EPP
+- /contato — formulário de contato e localização

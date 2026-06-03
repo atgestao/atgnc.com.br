@@ -5,9 +5,24 @@ import { SERVICOS } from '@/lib/data/empresa';
 import { CTABanner } from '@/components/sections/CTABanner';
 
 export const metadata: Metadata = {
-  title: 'Serviços',
+  title: 'Serviços | AT Gestão',
   description:
-    'Contabilidade, prestação de contas, reforma tributária, consultoria empresarial, empreendedorismo e capacitação de equipes. Conheça todos os serviços da AT Gestão.',
+    'Contabilidade, planejamento tributário, reforma tributária, consultoria empresarial e capacitação de equipes para empresas em Cariacica e Grande Vitória, ES. Conheça todos os serviços da AT Gestão.',
+  keywords: [
+    'serviços contabilidade Cariacica',
+    'planejamento tributário ES',
+    'reforma tributária consultoria',
+    'abertura de empresa Cariacica',
+    'capacitação financeira empresas',
+    'consultoria empresarial Espírito Santo',
+  ],
+  alternates: { canonical: 'https://atgnc.com.br/servicos' },
+  openGraph: {
+    title: 'Serviços | AT Gestão de Negócios e Contabilidade',
+    description: 'Contabilidade, planejamento tributário, reforma tributária e consultoria empresarial em Cariacica, ES.',
+    url: 'https://atgnc.com.br/servicos',
+    images: [{ url: '/images/andrea-thiago.webp', width: 1400, height: 788, alt: 'AT Gestão — Serviços de Contabilidade' }],
+  },
 };
 
 const ICONS: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
